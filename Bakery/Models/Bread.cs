@@ -6,11 +6,20 @@ namespace Bakery.Models
   {
     public int NumberOrdered { get; set; }
 
+    public string ErrorMessage()
+    {
+      string errorMessage = "error message";
+      return errorMessage;
+    }
+
     public int GetTotal(int numberOrdered)
     {
       int price = 5;
       int total = 0;
-      if (numberOrdered % 3 == 0)
+
+      if (numberOrdered >= 0)
+      {
+        if (numberOrdered % 3 == 0)
         {
           total = (numberOrdered / 3 * 2) * price;
         }
@@ -20,7 +29,13 @@ namespace Bakery.Models
           int temp = numberOrdered - diff;
           total = ((temp / 3 * 2) * price) + (diff * price);
         }
-      return total;
+        return total;
+      }
+      else
+      {
+        return this.ErrorMessage();
+      }
+
     }
 
   }
