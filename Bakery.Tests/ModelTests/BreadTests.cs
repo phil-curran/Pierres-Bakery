@@ -45,12 +45,5 @@ namespace Bakery.Models
         Assert.AreEqual(newBreadOrder.GetTotal(3), 10);
       }
 
-    // [TestMethod]
-    // public void CreateNewAppointment()
-    // {
-    //   Appointment newAppointment = new Appointment("name", "time");
-    //   Assert.AreEqual(typeof(Appointment), newAppointment.GetType());
-    // }
-
   }
 }
