@@ -4,7 +4,13 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public string Name { get; set; }
+    public int NumberOrdered { get; set; }
+
+    public int GetTotal(int numberOrdered)
+    {
+      int total = numberOrdered * 5;
+      return total;
+    }
 
   }
 }
