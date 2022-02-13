@@ -35,7 +35,6 @@ namespace Bakery
       Pastry newPastryOrder = new Pastry();
       float total = (float)(newBreadOrder.GetTotal(breadsOrdered) + newPastryOrder.GetTotal(pastriesOrdered));
       Console.WriteLine("Your order total is: $" + total);
-
     }
   }
 }
