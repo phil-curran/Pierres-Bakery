@@ -9,12 +9,19 @@ namespace Bakery.Models
   public class BreadTests
   {
     [TestMethod]
-      public void CreateNewAppointment()
+      public void CreateNewBreadObject()
       {
         Bread newBread = new Bread();
         Assert.AreEqual(typeof(Bread), newBread.GetType());
-        // Appointment newAppointment = new Appointment("name", "time");
-        // Assert.AreEqual(typeof(Appointment), newAppointment.GetType());
+      }
+
+      [TestMethod]
+      public void PassNumberToBreadObject_Get_and_Set()
+      {
+        int order = 5;
+        Bread newBread = new Bread();
+        newBread.NumberOrdered = order;
+        Assert.AreEqual(newBread.NumberOrdered, 5);
       }
 
     // [TestMethod]
