@@ -11,6 +11,8 @@ namespace Bakery.Models
     [TestMethod]
       public void CreateNewAppointment()
       {
+        Bread newBread = new Bread();
+        Assert.AreEqual(typeof(Bread), newBread.GetType());
         // Appointment newAppointment = new Appointment("name", "time");
         // Assert.AreEqual(typeof(Appointment), newAppointment.GetType());
       }
