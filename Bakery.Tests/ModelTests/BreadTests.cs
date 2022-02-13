@@ -45,5 +45,12 @@ namespace Bakery.Models
         Assert.AreEqual(newBreadOrder.GetTotal(3), 10);
       }
 
+      [TestMethod]
+      public void GetTotalForFourBreads()
+      {
+        Bread newBreadOrder = new Bread();
+        Assert.AreEqual(newBreadOrder.GetTotal(4), 15);
+      }
+
   }
 }
