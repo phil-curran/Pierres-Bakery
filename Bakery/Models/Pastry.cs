@@ -7,23 +7,33 @@ namespace Bakery.Models
 
     public int NumberOrdered { get; set; }
 
-    public int GetTotal(int numberOrdered)
+    public double GetTotal(double numberOrdered)
     {
-      int price = 10;
-      int total = 0;
+      double total = 0;
 
-      if (numberOrdered % 3 == 0)
+      if (numberOrdered == 1)
       {
-        total = (numberOrdered / 3 * 2) * price;
+        total = 2;
       }
-      else if (numberOrdered % 3 < 3)
+      else if (numberOrdered == 2)
       {
-        int diff = numberOrdered % 3;
-        int temp = numberOrdered - diff;
-        total = ((temp / 3 * 2) * price) + (diff * price);
+        total = 4;
+      } else if (numberOrdered == 3)
+      {
+        total = 5;
+      } else if (numberOrdered == 4)
+      {
+        total = 7;
+      } else if (numberOrdered == 5)
+      {
+        total = 9;
+      }else if (numberOrdered == 6)
+      {
+        total = 10;
+      } else {
+        total = numberOrdered * 1.75;
       }
       return total;
     }
-
   }
 }

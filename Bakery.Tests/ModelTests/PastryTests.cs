@@ -28,7 +28,7 @@ namespace Bakery.Models
     public void GetTotalForOnePastry()
     {
       Pastry newPastryOrder = new Pastry();
-      Assert.AreEqual(newPastryOrder.GetTotal(1), 10);
+      Assert.AreEqual(newPastryOrder.GetTotal(1), 2);
     }
 
   }
