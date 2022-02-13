@@ -2,12 +2,6 @@
 
 #### By Phil Curran
 
-#### \_{Al Roker 2 Electric Boogaloo}
-
-## Github Pages Link
-
-[TITLE HERE Github Pages]()
-
 ## Technologies Used
 
 - C#
@@ -25,7 +19,7 @@ This command-line only application presents the user with the current menu from 
 1. git clone: https://github.com/XLCM/Pierres-Bakery
 2. Build & install dependencies:
 - Navigate to Bakery/ and run: dotnet build
-3. To run:
+3. To Run:
 - Navigate to Bakery/ and run: dotnet run
 4. To Test:
 - Navigate to Bakery/Tests/ and run: dotnet test
