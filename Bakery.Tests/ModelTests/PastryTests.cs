@@ -32,61 +32,60 @@ namespace Bakery.Models
     }
 
     [TestMethod]
-    public void GetTotalForTwoBreads()
+    public void GetTotalForTwoPastries()
     {
-      Bread newBreadOrder = new Bread();
-      Assert.AreEqual(newBreadOrder.GetTotal(2), 10);
+      Pastry newPastryOrder = new Pastry();
+      Assert.AreEqual(newPastryOrder.GetTotal(2), 4);
     }
 
     [TestMethod]
-    public void GetTotalForThreeBreads()
+    public void GetTotalForThreePastries()
     {
-      Bread newBreadOrder = new Bread();
-      Assert.AreEqual(newBreadOrder.GetTotal(3), 10);
+      Pastry newPastryOrder = new Pastry();
+      Assert.AreEqual(newPastryOrder.GetTotal(3), 5);
     }
 
     [TestMethod]
-    public void GetTotalForFourBreads()
+    public void GetTotalForFourPastries()
     {
-      Bread newBreadOrder = new Bread();
-      Assert.AreEqual(newBreadOrder.GetTotal(4), 15);
+      Pastry newPastryOrder = new Pastry();
+      Assert.AreEqual(newPastryOrder.GetTotal(4), 7);
     }
 
     [TestMethod]
-    public void GetTotalForFiveBreads()
+    public void GetTotalForFivePastries()
     {
-      Bread newBreadOrder = new Bread();
-      Assert.AreEqual(newBreadOrder.GetTotal(5), 20);
+      Pastry newPastryOrder = new Pastry();
+      Assert.AreEqual(newPastryOrder.GetTotal(5), 9);
     }
 
     [TestMethod]
-    public void GetTotalForSixBreads()
+    public void GetTotalForSixPastries()
     {
-      Bread newBreadOrder = new Bread();
-      Assert.AreEqual(newBreadOrder.GetTotal(6), 20);
+      Pastry newPastryOrder = new Pastry();
+      Assert.AreEqual(newPastryOrder.GetTotal(6), 10);
     }
 
     [TestMethod]
-    public void GetTotalForSevenBreads()
+    public void GetTotalForSevenPastries()
     {
-      Bread newBreadOrder = new Bread();
-      Assert.AreEqual(newBreadOrder.GetTotal(7), 25);
+      Pastry newPastryOrder = new Pastry();
+      Assert.AreEqual(newPastryOrder.GetTotal(7), 12.25);
     }
 
     [TestMethod]
-    public void GetTotalForOneMillionBreads()
+    public void GetTotalForOneMillionPastries()
     {
-      Bread newBreadOrder = new Bread();
-      Assert.AreEqual(newBreadOrder.GetTotal(1000000), 3333335);
+      Pastry newPastryOrder = new Pastry();
+      Assert.AreEqual(newPastryOrder.GetTotal(1000000), 1750000);
     }
 
     [TestMethod]
-    public void GetTotalForZEROBreads()
+    public void GetTotalForZEROPastries()
     {
-      Bread newBreadOrder = new Bread();
-      Assert.AreEqual(newBreadOrder.GetTotal(0), 0);
+      Pastry newPastryOrder = new Pastry();
+      Assert.AreEqual(newPastryOrder.GetTotal(0), 0);
     }
-
 
   }
 }
