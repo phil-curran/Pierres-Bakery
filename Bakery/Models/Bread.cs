@@ -18,7 +18,7 @@ namespace Bakery.Models
         {
           int diff = numberOrdered % 3;
           int temp = numberOrdered - diff;
-          total = (temp / 3 * 2) * price + diff * price;
+          total = ((temp / 3 * 2) * price) + (diff * price);
         }
       return total;
     }
