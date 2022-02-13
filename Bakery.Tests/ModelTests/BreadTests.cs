@@ -87,12 +87,5 @@ namespace Bakery.Models
         Assert.AreEqual(newBreadOrder.GetTotal(0), 0);
       }
 
-      // [TestMethod]
-      // public void GetTotalForNegativeBreads()
-      // {
-      //   Bread newBreadOrder = new Bread();
-      //   Assert.AreEqual(newBreadOrder.GetTotal(-4), "error message");
-      // }
-
   }
 }

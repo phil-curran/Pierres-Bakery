@@ -6,12 +6,6 @@ namespace Bakery.Models
   {
     public int NumberOrdered { get; set; }
 
-    public string ErrorMessage()
-    {
-      string errorMessage = "error message";
-      return errorMessage;
-    }
-
     public int GetTotal(int numberOrdered)
     {
       int price = 5;
