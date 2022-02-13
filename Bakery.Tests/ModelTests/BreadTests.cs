@@ -73,5 +73,12 @@ namespace Bakery.Models
         Assert.AreEqual(newBreadOrder.GetTotal(7), 25);
       }
 
+      [TestMethod]
+      public void GetTotalForOneMillionBreads()
+      {
+        Bread newBreadOrder = new Bread();
+        Assert.AreEqual(newBreadOrder.GetTotal(1000000), 3333335);
+      }
+
   }
 }
