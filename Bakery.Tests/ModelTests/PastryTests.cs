@@ -9,11 +9,20 @@ namespace Bakery.Models
   public class PastryTests
   {
     [TestMethod]
-      public void CreateNewPastryObject()
-      {
-        Pastry newPastryOrder = new Pastry();
-        Assert.AreEqual(typeof(Pastry), newPastryOrder.GetType());
-      }
+    public void CreateNewPastryObject()
+    {
+      Pastry newPastryOrder = new Pastry();
+      Assert.AreEqual(typeof(Pastry), newPastryOrder.GetType());
+    }
+
+    [TestMethod]
+    public void PassNumberToPastryObject_Get_and_Set()
+    {
+      int order = 5;
+      Pastry newPastryOrder = new Pastry();
+      newPastryOrder.NumberOrdered = order;
+      Assert.AreEqual(newPastryOrder.NumberOrdered, 5);
+    }
 
   }
 }
