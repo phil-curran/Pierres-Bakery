@@ -11,31 +11,38 @@ namespace Bakery.Models
     [TestMethod]
       public void CreateNewBreadObject()
       {
-        Bread newBread = new Bread();
-        Assert.AreEqual(typeof(Bread), newBread.GetType());
+        Bread newBreadOrder = new Bread();
+        Assert.AreEqual(typeof(Bread), newBreadOrder.GetType());
       }
 
       [TestMethod]
       public void PassNumberToBreadObject_Get_and_Set()
       {
         int order = 5;
-        Bread newBread = new Bread();
-        newBread.NumberOrdered = order;
-        Assert.AreEqual(newBread.NumberOrdered, 5);
+        Bread newBreadOrder = new Bread();
+        newBreadOrder.NumberOrdered = order;
+        Assert.AreEqual(newBreadOrder.NumberOrdered, 5);
       }
 
       [TestMethod]
       public void GetTotalForOneBread()
       {
-        Bread newBread = new Bread();
-        Assert.AreEqual(newBread.GetTotal(1), 5);
+        Bread newBreadOrder = new Bread();
+        Assert.AreEqual(newBreadOrder.GetTotal(1), 5);
       }
 
       [TestMethod]
       public void GetTotalForTwoBreads()
       {
-        Bread newBread = new Bread();
-        Assert.AreEqual(newBread.GetTotal(2), 10);
+        Bread newBreadOrder = new Bread();
+        Assert.AreEqual(newBreadOrder.GetTotal(2), 10);
+      }
+
+      [TestMethod]
+      public void GetTotalForThreeBreads()
+      {
+        Bread newBreadOrder = new Bread();
+        Assert.AreEqual(newBreadOrder.GetTotal(3), 10);
       }
 
     // [TestMethod]
