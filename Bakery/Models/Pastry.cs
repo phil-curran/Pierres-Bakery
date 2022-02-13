@@ -5,7 +5,7 @@ namespace Bakery.Models
   public class Pastry
   {
 
-    public int NumberOrdered {4}
+    public int NumberOrdered { get; set; }
 
   }
 }
