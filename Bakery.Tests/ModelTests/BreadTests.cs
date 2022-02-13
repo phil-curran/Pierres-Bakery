@@ -27,9 +27,17 @@ namespace Bakery.Models
       [TestMethod]
       public void GetTotalForOneBread()
       {
-        Bread newBread = new Bread(1);
-        Assert.AreEqual(newBread.GetTotal(), 1);
+        Bread newBread = new Bread();
+        Assert.AreEqual(newBread.GetTotal(1), 5);
       }
+
+      [TestMethod]
+      public void GetTotalForTwoBreads()
+      {
+        Bread newBread = new Bread();
+        Assert.AreEqual(newBread.GetTotal(2), 10);
+      }
+
     // [TestMethod]
     // public void CreateNewAppointment()
     // {
