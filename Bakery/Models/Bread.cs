@@ -22,7 +22,6 @@ namespace Bakery.Models
         total = ((temp / 3 * 2) * price) + (diff * price);
       }
       return total;
-
     }
 
   }

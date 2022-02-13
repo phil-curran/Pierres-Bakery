@@ -24,5 +24,12 @@ namespace Bakery.Models
       Assert.AreEqual(newPastryOrder.NumberOrdered, 5);
     }
 
+    [TestMethod]
+    public void GetTotalForOnePastry()
+    {
+      Pastry newPastryOrder = new Pastry();
+      Assert.AreEqual(newPastryOrder.GetTotal(1), 5);
+    }
+
   }
 }
