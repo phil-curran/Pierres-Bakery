@@ -36,23 +36,6 @@ namespace Bakery
       float total = (float)(newBreadOrder.GetTotal(breadsOrdered) + newPastryOrder.GetTotal(pastriesOrdered));
       Console.WriteLine("Your order total is: $" + total);
 
-      // string stringMaxPrice = Console.ReadLine();
-      // int maxPrice = int.Parse(stringMaxPrice);
-
-      // List<Car> CarsMatchingSearch = new List<Car>(0);
-
-      // foreach (Car automobile in Cars)
-      // {
-      //   if (automobile.WorthBuying(maxPrice))
-      //   {
-      //     CarsMatchingSearch.Add(automobile);
-      //   }
-      // }
-
-      // foreach(Car automobile in CarsMatchingSearch)
-      // {
-      //   Console.WriteLine(automobile.MakeModel);
-      // }
     }
   }
 }
