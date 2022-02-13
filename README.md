@@ -30,11 +30,10 @@ This command-line only application presents the user with the current menu from 
 
 ## Contact Me
 
-_Please contact one of us if you run into any issues or have questions, ideas or concerns:_
-_[skelton.jt9@gmail.com, cnakayam@gmail.com, cdepastene@gmail.com, ebruerenb@gmail.com, pecurran@hotmail.com]_
+Hit me up if you have questions, need help, or want to pull this and make it even more rad.
 
 ## License
 
 MIT
 
-Copyright (c) _2022_, Phil Curran
+Copyright (c) 2022, Phil Curran <pecurran@hotmail.com>
